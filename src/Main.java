@@ -1,5 +1,7 @@
 public class Main {
-    public static String calc(String input) {
+    public static String calc(String input)
+    {
+        input = input.trim().replaceAll(" ", "");
         int num1;
         int num2;
         String op;
@@ -57,11 +59,11 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        calc("1+1");
-        calc("1+10");
-        calc("2-10");
+        calc("1 - 10");
+        calc("1 + 10");
+        calc("2 -10");
         calc("9+10");
         calc("9/10");
-        calc("9/100");
+        calc("9/10");
     }
 }
